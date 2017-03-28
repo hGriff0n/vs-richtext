@@ -24,7 +24,7 @@
 		<dict>
 			<key>patterns</key>
 			<array>
-				<!-- #.*\n -->
+				<!-- //.*\n -->
 				<dict>
 					<key>captures</key>
 					<dict>
@@ -43,7 +43,24 @@
 					<key>match</key>
 					<string>(//) *(todo:|TODO:)?.*$\n?</string>
 					<key>name</key>
-					<string>comment.line.number-sign.richtext</string>
+					<string>comment.line.richtext</string>
+				</dict>
+
+				<!-- {} -->
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>string.quoted.single.richtext</string>
+							<!--<string>entity.name.class.richtext</string>-->
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>{([^}]*)}</string>
+					<key>name</key>
+					<string>variable.package.richtext</string>
 				</dict>
 			</array>
 		</dict>
