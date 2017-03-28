@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleUUID</key>
+	<string>452017E8-0065-49EF-AB9D-7849B27D9367</string>
+	<key>fileTypes</key>
+	<array>
+		<string>spero</string>
+	</array>
+
+	<!-- What are these for? -->
+	<key>foldingStartMarker</key>
+	<string>/\*\*|\{\s*$</string>
+	<key>foldingStopMarker</key>
+	<string>\*\*/|^\s*\}</string>
+
+	<key>keyEquivalent</key>
+	<string>^~S</string>
+	<key>name</key>
+	<string>richtext</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<!-- #.*\n -->
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.comment.richtext</string>
+						</dict>
+
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.function.declaration</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(//) *(todo:|TODO:)?.*$\n?</string>
+					<key>name</key>
+					<string>comment.line.number-sign.richtext</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+
+	<key>scopeName</key>
+	<string>source.richtext</string>
+	<!--<key>uuid</key>-->
+</dict>
+</plist>

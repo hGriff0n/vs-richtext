@@ -1,0 +1,33 @@
+{
+	"name": "richtext",
+	"version": "0.1.0",
+	"description": "Highlight comments within text files",
+	"engines": {
+		"vscode": ">=0.9.0-pre.1"
+	},
+	"publisher": "hGriff0n",
+	"categories": [
+		"Languages"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/hGriff0n/vs-spero.git"
+	},
+	"contributes": {
+		"languages": [
+			{
+				"id": "richtext",
+				"extensions": [ ".txt", ".rtxt" ],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "richtext",
+				"scopeName": "source.richtext",
+				"path": "./richtext.tmLanguage"
+			}
+		]
+	},
+	"editor.tabSize": 4
+}
