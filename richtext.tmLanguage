@@ -41,7 +41,7 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>(//) *(todo:|TODO:)?.*$\n?</string>
+					<string>(//) *((([Tt][Oo][Dd][Oo])|([Nn][Oo][Tt][Ee])):)?.*$\n?</string>
 					<key>name</key>
 					<string>comment.line.richtext</string>
 				</dict>
