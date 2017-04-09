@@ -34,14 +34,14 @@
 							<string>punctuation.definition.comment.richtext</string>
 						</dict>
 
-						<key>2</key>
+						<key>3</key>
 						<dict>
 							<key>name</key>
 							<string>entity.name.function.declaration</string>
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>(//) *((([Tt][Oo][Dd][Oo])|([Nn][Oo][Tt][Ee])):)?.*$\n?</string>
+					<string>((https?:)?//) *((([Tt][Oo][Dd][Oo])|([Nn][Oo][Tt][Ee])):)?.*$\n?</string>
 					<key>name</key>
 					<string>comment.line.richtext</string>
 				</dict>
